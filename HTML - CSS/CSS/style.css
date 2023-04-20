@@ -1,0 +1,353 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #F1EBE0;
+}
+
+.container {
+	background-color: #F1EBE0;
+	height: 0.5fr;
+	display: grid;
+	grid-template-columns: repeat (8, 1fr);
+	grid-template-rows: 0.6fr 0.4fr;
+	grid-template-areas:
+	"entete entete entete entete entete entete entete entete"
+	"menu1 menu2 menu3 menu4 menu5 menu6 menu7 menu8"
+	;
+}
+
+.container2 {
+	background-color: #F1EBE0;
+	height: 100vh;
+	display: block;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	"corps"
+	;
+}
+
+.container3 {
+	background-color: #F1EBE0;
+	height: 8vh;
+	display: grid;
+	grid-template-columns: repeat (8, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	"footer1 footer2 footer3 footer4 footer5 footer6 footer7 footer8"
+	;
+}
+
+.entete {
+	grid-area: entete;
+	align-items: center;
+	justify-content: center;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.menu1 {
+	grid-area: menu1;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #CCB287;
+}
+
+.menu2 {
+	grid-area: menu2;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #3D301A;
+}
+
+.menu3 {
+	grid-area: menu3;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #CCB287;
+}
+
+.menu4 {
+	grid-area: menu4;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #3D301A;
+}
+
+.menu5 {
+	grid-area: menu5;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #CCB287;
+}
+
+.menu6 {
+	grid-area: menu6;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #3D301A;
+}
+
+.menu7 {
+	grid-area: menu7;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #CCB287;
+}
+
+.menu8 {
+	grid-area: menu8;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #3D301A;
+}
+
+.navm1, .navm3, .navm5, .navm7 {
+	color: #3D301A;
+	font-family: "Bell MT";
+	font-size: 2rem;
+	text-align: center;
+}
+
+.navm1:hover, .navm3:hover, .navm5:hover, .navm7:hover {
+	color: #5B3C11;
+	text-align: center;
+}
+
+.navm2, .navm4, .navm6, .navm8 {
+	color: #CCB287;
+	font-family: "Bell MT";
+	font-size: 2rem;
+	text-align: center;
+}
+
+.navm2:hover, .navm4:hover, .navm6:hover, .navm8:hover {
+	color: #E1CE9A;
+	text-align: center;
+}
+
+.corps {
+	grid-area: corps;
+	align-items: left;
+	justify-content: left;
+	background-color: #F1EBE0;
+	padding: auto;
+}
+
+.carrousel {
+	padding: 1rem 2rem;
+    margin: auto;
+}
+
+ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+	width: auto;
+}
+
+li {
+    display: inline-block;
+}
+
+.cartes-carrousel {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+	scroll-snap-type: x mandatory;
+}
+
+.carte-carrousel {
+	margin-left: 1rem;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 450px;
+	scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #CCB287;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #CCB287;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3D301A;
+    border-radius: 3px;
+}
+
+.carte {
+    border: 2px solid #3D301A;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.titre-carte {
+	font-family: "Bell MT";
+	color: #3D301A;
+	font-size: 2rem;
+}
+
+.contenu-carte {
+	font-family: "Bell MT";
+	color: #3D301A;
+	text-align: justify;
+	font-size: 1.5rem;
+}
+
+a.button {
+    align-items: center;
+    background-color: #3D301A;
+    border-radius: 4px;
+    color: #F1EBE0;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+a.button:hover,
+a.button:focus {
+    background-color: #5B3C11;
+    box-shadow: 0 0 2px 2px #5B3C11;
+}
+
+h1 {
+	font-family: "Bell MT";
+	color: #3D301A;
+	font-size: 3rem;
+}
+
+.pourjouer {
+	font-family: "Bell MT";
+	color: #3D301A;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+}
+
+.boutons {
+	text-align: center;
+}
+
+.chessbouton {
+	border-radius: 20px;
+	box-shadow: 10px 10px 15px #707070;
+	margin: 20px;
+	margin-right: 100px;
+}
+
+.chessbouton:hover {
+	cursor: pointer;
+	border-radius: 20px;
+	box-shadow: 10px 10px 15px #707070,
+				-5px -5px 15px #707070;
+}
+
+.lichessbouton {
+	border-radius: 20px;
+	box-shadow: 10px 10px 15px #707070;
+	margin: 20px;
+	margin-left: 100px;
+}
+
+.lichessbouton:hover {
+	cursor: pointer;
+	border-radius: 20px;
+	box-shadow: 10px 10px 15px #707070,
+				-5px -5px 15px #707070;
+}
+
+.footer1{
+	grid-area: footer1;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #3D301A;
+}
+
+.footer2 {
+	grid-area: footer2;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #CCB287;
+}
+
+.footer3 {
+	grid-area: footer3;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #3D301A;
+}
+
+.footer4{
+	grid-area: footer4;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #CCB287;
+}
+
+.footer5{
+	grid-area: footer5;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #3D301A;
+}
+
+.footer6{
+	grid-area: footer6;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #CCB287;
+}
+
+.footer7{
+	grid-area: footer7;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #3D301A;
+}
+
+.footer8{
+	grid-area: footer8;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	background-color: #CCB287;
+}
+
+.navf3, .navf5 {
+	color: #CCB287;
+	font-family: "Bell MT";
+	text-align: center;
+	font-size: 1rem;
+}
+
+.navf4, .navf6 {
+	color: #3D301A;
+	font-family: "Bell MT";
+	text-align: center;
+	font-size: 1rem;
+}

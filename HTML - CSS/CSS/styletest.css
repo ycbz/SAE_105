@@ -1,0 +1,82 @@
+.corps {
+	grid-area: corps;
+    display: flex;
+	align-items: left;
+	justify-content: left;
+	background-color: #F1EBE0;
+	padding: 1rem 2rem;
+    margin: auto;
+}
+
+ul {
+    margin: 0 0 1.5rem;
+    padding: 0;
+	width: auto;
+}
+
+li {
+    display: inline-block;
+}
+
+.cartes-carrousel {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+	scroll-snap-type: x mandatory;
+}
+
+.carte-carrousel {
+	margin-left: 1rem;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 450px;
+	scroll-snap-align: start;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #CCB287;
+}
+
+::-webkit-scrollbar {
+    height: 6px;
+    background-color: #CCB287;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3D301A;
+    border-radius: 3px;
+}
+
+.carte {
+    border: 2px solid #3D301A;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.titre-carte {
+	font-family: "Bell MT";
+	color: #3D301A;
+}
+
+.contenu-carte {
+	font-family: "Bell MT";
+	color: #3D301A;
+}
+
+a.button {
+    align-items: center;
+    background-color: #3D301A;
+    border-radius: 4px;
+    color: #F1EBE0;
+    cursor: pointer;
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+a.button:hover,
+a.button:focus {
+    background-color: #5B3C11;
+    box-shadow: 0 0 2px 2px #5B3C11;
+}
